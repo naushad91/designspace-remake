@@ -1,0 +1,10 @@
+//to avoid code duplication we can just extend instead of copying from typscript-config/base.json as a abstraction for this file in a common 
+//bring it to the dependencies also
+//then go back to the root and global pnpm install
+{
+  "extends":"@repo/typescript-config/base.json",
+    "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src"
+  }
+}
