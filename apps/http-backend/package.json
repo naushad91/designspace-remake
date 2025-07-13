@@ -1,7 +1,6 @@
 {
   "name": "http-backend",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "tsc -b",
@@ -9,15 +8,21 @@
     "dev": "npm run build && npm run start"
   },
   "dependencies": {
+    "@repo/db": "workspace:*",
+    "@types/cors": "^2.8.17",
+    "@types/jsonwebtoken": "^9.0.7",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@repo/backend-common": "workspace:*",
+    "@repo/common": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@types/express": "^5.0.3",
-    "@types/jsonwebtoken": "^9.0.10",
-    "express": "^5.1.0",
-    "jsonwebtoken": "^9.0.2",
-     "@repo/backend-common":"workspace:*",
-      "@repo/common":"workspace:*"
+    "@types/express": "^5.0.0"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": ""
 }
